@@ -1,0 +1,26 @@
+# Local IDE and machine configuration
+/.idea/
+*.iml
+/local.properties
+/.gradle/
+/.gradle-user-home/
+/.gradle-bootstrap/
+/.android-user-home/
+/.kotlin/
+
+# Generated outputs, signing material and local staging files
+**/build/
+*.apk
+*.aab
+*.apks
+*.idsig
+*.keystore
+*.jks
+*.hprof
+*.log
+*.next.txt
+/integrate-*.ps1
+/patch-*.ps1
+
+# The wrapper jar IS source infrastructure and must be included.
+!gradle/wrapper/gradle-wrapper.jar

@@ -1,0 +1,32 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    // Pure Java: retain the modern AGP DSL without adding Kotlin runtime/compiler tasks.
+    enableKotlin = false
+    namespace = 'com.lanmirror.app'
+    compileSdk = 37
+    buildToolsVersion = '37.0.0'
+
+    defaultConfig {
+        applicationId = 'com.lanmirror.app'
+        minSdk = 26
+        targetSdk = 37
+        versionCode = 12
+        versionName = '1.8.0'
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        debug {
+            // Standard per-user Android debug key; never the separately delivered APK signing key.
+        }
+        release {
+            minifyEnabled = false
+            // Intentionally unsigned. Configure a private release key outside source control when publishing.
+        }
+    }
+}
