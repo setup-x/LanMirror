@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = 'LanMirror'
-include ':app'
+include ':app', ':lanmirror-core', ':lanmirror-discovery', ':lanmirror-sender', ':lanmirror-receiver', ':lanmirror-audio'

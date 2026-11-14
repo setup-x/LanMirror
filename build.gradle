@@ -1,3 +1,9 @@
 plugins {
     id 'com.android.application' version '9.5.1' apply false
+    id 'com.android.library' version '9.5.1' apply false
+}
+
+subprojects {
+    group = 'com.lanmirror'
+    version = '1.8.0'
 }

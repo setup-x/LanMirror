@@ -2,6 +2,14 @@ plugins {
     id 'com.android.application'
 }
 
+dependencies {
+    implementation project(':lanmirror-core')
+    implementation project(':lanmirror-discovery')
+    implementation project(':lanmirror-sender')
+    implementation project(':lanmirror-receiver')
+    implementation project(':lanmirror-audio')
+}
+
 android {
     // Pure Java: retain the modern AGP DSL without adding Kotlin runtime/compiler tasks.
     enableKotlin = false
@@ -14,7 +22,7 @@ android {
         minSdk = 26
         targetSdk = 37
         versionCode = 12
-        versionName = '1.8.0'
+        versionName = '2.0.0'
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
